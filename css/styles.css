@@ -214,3 +214,200 @@ select {
 .button-outline:hover{
   background-color: var(--color-hero);
 }
+
+/* 05 SECTION ENCABEZADOS */
+.section-heading{
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.section-heading h2, .about-content h2{
+  margin: 0 0 1rem;
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+/* 6 SERVICIOS GRID */
+.services{
+  background-color: var(--color-background);
+}
+
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 2.5rem;
+}
+
+.service-card{
+  padding: 2rem;
+  border-radius: var(--radius-card);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+
+.service-icon{
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+}
+
+.service-icon-blue{
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.service-icon-green{
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.service-icon-orange{
+  background-color: #ffedd5;
+  color: #c2410c;
+}
+
+.service-card h3{
+  margin: 0 0 1rem;
+  color: var(--color-secondary);
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+}
+
+.service-card p{
+  margin: 0 0 1.3rem;
+  color: var(--color-muted);
+}
+
+.service-card a{
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.service-card a:hover{
+  text-decoration: underline;
+}
+
+/* 7  NOSOTROS*/
+.about{
+  background: var(--color-surface);
+}
+
+.about-layout{
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-image{
+  overflow: hidden;
+  border-radius: var(--radius-card);
+}
+
+.about-image img{
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.about-content >p:not(.eyebrow){
+  margin: 0 0 1.8rem;
+  color: var(--color-muted);
+}
+
+/* 8 PROYECTOS GRID */
+.projects{
+  background-color: var(--color-background);
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 1.5rem;
+}
+
+.project-card{
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-card);
+}
+
+.project-card img{
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.project-body{
+  padding: 1.5rem;
+}
+
+.project-body, .project-category{
+  margin: 0 0 .3rem;
+  color: var(--color-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.project-body h3{
+  margin: 0 0 0.5rem;
+  color: var(--color-secondary);
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+}
+
+.project-body >p:last-child{
+  margin: 0;
+  color: var(--color-muted);
+  font-size: .92rem;
+}
+
+/* 9 FOOTER */
+.site-footer{
+  border-top: 1px solid var(--color-border);
+  background-color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 90px;
+}
+
+.footer-content p{
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.footer-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.footer-links a{
+  color: var(--color-muted);
+  font-size: .9rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover{
+  color: var(--color-primary)
+}
