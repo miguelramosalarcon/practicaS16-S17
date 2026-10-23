@@ -411,3 +411,57 @@ select {
 .footer-links a:hover{
   color: var(--color-primary)
 }
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .container{
+    width: 90%;
+  }
+
+  .section{
+    padding-block: 3.8rem;
+  }
+
+  .header-layout{
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .header-logo{
+    font-size: 1.5rem;
+  }
+
+  .header-social{
+    margin:0 auto;
+    padding-bottom: 1rem;
+  }
+
+  .header-nav{
+    gap: 0.5rem 1rem;
+  }
+
+  .header-nav a{
+    font-size: .80rem;
+  }
+
+  .hero-layout{
+    min-height: 0;
+    padding-block: 4rem;
+  }
+
+  .services-grid, .projects-grid, .about-layout{
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-block: 1.5rem;
+    gap: 0.5rem;
+  }
+  
+
+}
